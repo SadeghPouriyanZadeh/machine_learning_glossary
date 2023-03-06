@@ -127,4 +127,9 @@ Mastering the Language of Machine Learning
 
 ---
 
+- **Stop Words** $\equiv$
+  <ins>words</ins> that are commonly used in a language but are typically ignored by search engines and other text analysis tools because they <ins>do not carry significant meaning</ins> or contribute to the understanding of the text.  
+   **Example:**  
+   "the," "a," "an," "and," "of," "to," "in," "that," "is," "for," and "it."
 
+---

@@ -119,3 +119,12 @@ Mastering the Language of Machine Learning
   "The" => "the"
 
 ---
+
+- **Stemming** $\equiv$
+  the process of <ins>reducing inflected or derived words to their base or root form</ins> in order to normalize and group words with similar meanings.  
+  **Example:**  
+  reduce words such as "running," "runs," and "runner" to the common stem "run."
+
+---
+
+

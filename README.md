@@ -71,3 +71,19 @@ a type of data representation where the majority of the values in the data are z
 
 ***
 
+* **Frequency Mapping** $\equiv$
+the process of counting the occurrence of words in a given text or corpus.  
+**Example:** "Mary had a little lamb. Its fleece was white as snow."  
+{"Mary": 1,
+"had": 1,
+"a": 1,
+"little": 1,
+"lamb": 1,
+"Its": 1,
+"fleece": 1,
+"was": 1,
+"white": 1,
+"as": 2,
+"snow": 1}
+
+***

@@ -87,3 +87,17 @@ the process of counting the occurrence of words in a given text or corpus.
 "snow": 1}
 
 ***
+
+* **Sentiment Feature Extraction** $\equiv$
+a process of extracting features from text data that can be used to identify the sentiment or emotion expressed in the text.  
+**Example:** Consider the following tweet:
+"Mary had a little lamb. Its fleece was white as snow but the butcher didn't care."
+We can use the vocabulary to extract the features for this tweet as follows:
+
+1. Feature 1: Bias unit equal to 1
+2. Feature 2: Sum of positive frequencies for every unique word in the tweet: 0 (since there are no positive words in the tweet)
+3. Feature 3: Sum of negative frequencies for every unique word in the tweet: 1 (sum of negative frequency for "butcher")  
+Thus, the vector representation for this tweet would be [1, 0, 1], indicating that it has a negative sentiment due to the negative word "butcher".
+
+***
+

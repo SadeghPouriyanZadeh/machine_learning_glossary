@@ -7,7 +7,7 @@ Mastering the Language of Machine Learning
 * **The Fastest Way:** Read the underlined words.
 * **Deeper Understaing:** Read the whole meaning and the example.
 
-***
+## The Glossary
 
 * **Linear regression** $\equiv$
 a statistical method used to model the relationship between a categorical dependent variable and one or more independent variables. a popular method in the field of machine learning for solving regression problems, where the goal is to  <u>predict a continuous numerical value</u>.  

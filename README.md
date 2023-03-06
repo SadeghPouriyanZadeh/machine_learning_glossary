@@ -58,3 +58,10 @@ using natural language processing and machine learning techniques to automatical
 
 ***
 
+* **Vocabulary** $\equiv$
+a collection of all the unique words or terms that appear in a corpus of text.  
+**Example:** ["Mary", "had", "a", "little", "lamb", "Its", "fleece", "was", "white", "as", "snow"]
+
+
+***
+

@@ -53,3 +53,8 @@ the sentence "I love this pizza, it's the best I've ever had!" expresses a posit
 
 ***
 
+* **Sentiment Analysis** $\equiv$
+using natural language processing and machine learning techniques to automatically analyze and classify opinions, emotions, and attitudes expressed in text data; to determine whether a piece of text expresses a *positive*, *negative*, or *neutral* sentiment.
+
+***
+

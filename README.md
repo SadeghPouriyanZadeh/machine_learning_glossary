@@ -45,6 +45,20 @@ Mastering the Language of Machine Learning
 
 ---
 
+- **Cost Function** $\equiv$
+  a mathematical function that measures how well a machine learning model is performing on a particular task. The goal of the cost function is to compute a single scalar value that represents the "cost" incurred by the model's predictions compared to the true values.
+
+  $$J(\theta) = -\frac{1}{m} \sum_{i=1}^{m} [y^{(i)}\log(h_\theta(x^{(i)})) + (1-y^{(i)})\log(1 - h_\theta(x^{(i)}))] + \frac{\lambda}{2m}\sum_{j=1}^{n}\theta_j^2$$  
+  In this equation:
+
+  $J(\theta)$ is the cost function  
+   $m$ is the number of training examples  
+  $y^{(i)}$ is the true label of the $i$-th training example  
+  $h_\theta(x^{(i)})$ is the predicted label of the $i$-th training example, given the model parameters $\theta$  
+  $\lambda$ is the regularization parameter  
+  $n$ is the number of features in the input data  
+  $\theta_j$ is the $j$-th element of the vector of model parameters $\theta$
+
 ### Natural Language Processing (NLP)
 
 - **Sentiment** $\equiv$

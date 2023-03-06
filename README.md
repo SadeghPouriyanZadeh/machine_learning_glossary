@@ -46,7 +46,7 @@ Mastering the Language of Machine Learning
 ---
 
 - **Cost Function** $\equiv$
-  a mathematical function that measures how well a machine learning model is performing on a particular task. The goal of the cost function is to compute a single scalar value that represents the "cost" incurred by the model's predictions compared to the true values.
+  a mathematical function that <ins>measures how well a machine learning model is performing</ins> on a particular task. The goal of the cost function is to compute a single scalar value that represents the "cost" incurred by the model's predictions compared to the true values.
 
   $$J(\theta) = -\frac{1}{m} \sum_{i=1}^{m} [y^{(i)}\log(h_\theta(x^{(i)})) + (1-y^{(i)})\log(1 - h_\theta(x^{(i)}))] + \frac{\lambda}{2m}\sum_{j=1}^{n}\theta_j^2$$  
   In this equation:
@@ -58,6 +58,63 @@ Mastering the Language of Machine Learning
   $\lambda$ is the regularization parameter  
   $n$ is the number of features in the input data  
   $\theta_j$ is the $j$-th element of the vector of model parameters $\theta$
+
+  The cost function for logistic regression combines the negative log-likelihood of the data with a regularization term to prevent overfitting. The negative log-likelihood measures how well the model predicts the true labels, while the regularization term penalizes large values of the model parameters to encourage simpler models that are less likely to overfit the training data. The optimal values of the model parameters can be found by minimizing the cost function using an optimization algorithm such as gradient descent.
+
+---
+
+- **Negative Log-likelihood** $\equiv$
+  <ins>a cost function to optimize models</ins> that predict probabilities for classification problems.
+  $$L(\theta) = -\sum_{i=1}^m y_i \log h_\theta(x_i) + (1 - y_i) \log (1 - h_\theta(x_i))$$
+
+---
+
+- **Optimization** $\equiv$
+  Optimization is the process of finding the best possible solution to a problem or a set of constraints, given a set of variables and some objective or cost function that defines what "best" means in the context of the problem. In the context of machine learning, optimization is the process of <ins>finding the set of model parameters that minimize the cost function</ins> or maximize the performance metric on a given dataset.
+
+---
+
+- **Gradient Descent** $\equiv$
+  <ins>an optimization algorithm used to minimize a cost function</ins> by iteratively adjusting the parameters of a model in the direction of steepest descent of the cost function.
+
+---
+
+- **The Described Concepts in an Example (Use a paper and  a pen!):**  
+  Let's consider the problem of fitting a straight line to a set of data points using linear regression. In this problem, we want to find the best possible line that fits the data, where "best" is defined as minimizing the sum of the squared errors between the predicted values and the true values.  
+  We can define the cost function as follows:
+
+  $$J(\theta) = \frac{1}{2m} \sum_{i=1}^m (h_\theta(x^{(i)}) - y^{(i)})^2$$  
+  Here:  
+  $J(\theta)$ is the cost function,  
+  $\theta$ represents the model parameters (in this case, the slope and intercept of the line),  
+  $m$ is the number of data points,  
+  $x^{(i)}$ and $y^{(i)}$ represent the $i$-th data point, and  
+  $h_\theta(x^{(i)})$ represents the predicted value of $y$ for the $i$-th data point.
+
+  The goal of optimization is to find the values of $\theta$ that minimize the cost function $J(\theta)$. We can use an optimization algorithm such as gradient descent to iteratively update the values of $\theta$ until the cost function is minimized.
+
+  The update rule for gradient descent is:
+
+  $$\theta_j := \theta_j - \alpha \frac{\partial}{\partial \theta_j} J(\theta)$$
+
+  Here, $\alpha$ is the learning rate, which controls the step size in each iteration of the optimization algorithm.  
+  The partial derivative of the cost function with respect to $\theta_j$ can be computed using the chain rule:
+
+  $$\frac{\partial}{\partial \theta_j} J(\theta) = \frac{1}{m} \sum_{i=1}^m (h_\theta(x^{(i)}) - y^{(i)})x_j^{(i)}$$
+
+  We can then update the values of $\theta$ as follows:
+
+  $$\theta_0 := \theta_0 - \alpha \frac{1}{m} \sum_{i=1}^m (h_\theta(x^{(i)}) - y^{(i)})$$
+
+  $$\theta_1 := \theta_1 - \alpha \frac{1}{m} \sum_{i=1}^m (h_\theta(x^{(i)}) - y^{(i)})x^{(i)}$$
+
+  We can repeat these updates until the cost function $J(\theta)$ is minimized, at which point we have found the best possible values of $\theta$ for the linear regression problem.
+
+  Overall, optimization is a key component of machine learning, and is used to find the optimal values of model parameters for a wide variety of problems.
+
+---
+
+---
 
 ### Natural Language Processing (NLP)
 

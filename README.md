@@ -12,7 +12,7 @@ Mastering the Language of Machine Learning
 ### General Machine Learning (ML)
 
 * **Linear regression** $\equiv$
-a statistical method used to model the relationship between a categorical dependent variable and one or more independent variables. a popular method in the field of machine learning for solving regression problems, where the goal is to  <u>predict a continuous numerical value</u>.  
+a statistical method used to model the relationship between a categorical dependent variable and one or more independent variables. a popular method in the field of machine learning for solving regression problems, where the goal is to  <ins>predict a continuous numerical value</ins>.  
 The linear regression model assumes a linear relationship between the dependent variable and the independent variables, which means that the relationship can be expressed mathematically as a straight line. The model estimates the coefficients of the line, which represent the slope and intercept.  
 Once the model has been trained on a set of training data, it can be used to make predictions on new data by plugging in the values of the independent variables and calculating the corresponding predicted value of the dependent variable.  
 **example:**  
@@ -115,4 +115,10 @@ Tokenized text: ["The", "quick", "brown", "fox", "jumps", "over", "the", "lazy",
 
 ***
 
+* Lowercasing $\equiv$
+the process of converting all the letters in a text to lowercase.  
+**Example:**  
+"The" => "the"
+
+***
 

@@ -9,6 +9,8 @@ Mastering the Language of Machine Learning
 
 ## The Glossary
 
+### General Machine Learning (ML)
+
 * **Linear regression** $\equiv$
 a statistical method used to model the relationship between a categorical dependent variable and one or more independent variables. a popular method in the field of machine learning for solving regression problems, where the goal is to  <u>predict a continuous numerical value</u>.  
 The linear regression model assumes a linear relationship between the dependent variable and the independent variables, which means that the relationship can be expressed mathematically as a straight line. The model estimates the coefficients of the line, which represent the slope and intercept.  
@@ -38,6 +40,16 @@ The logistic regression model uses a logistic function to transform the output o
 a mathematical function used in logistic regression to model the relationship between the dependent variable and the independent variables. The sigmoid function <u>takes any input value and maps it to a value between 0 and 1</u>, which can be interpreted as a probability.
 $$f(x) = \frac{1}{1 + e^{-x}}$$
 ![sigmoid_function](sigmoid_function.png)
+
+***
+
+
+### Natural Language Processing (NLP)
+
+* **Sentiment** $\equiv$
+the overall <u> emotional tone or attitude expressed in a piece of text</u>.  
+**Example:**
+the sentence "I love this pizza, it's the best I've ever had!" expresses a positive sentiment with a high degree of intensity, while the sentence "I didn't like the movie very much" expresses a negative sentiment with a low degree of intensity.
 
 ***
 

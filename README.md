@@ -65,3 +65,9 @@ a collection of all the unique words or terms that appear in a corpus of text.
 
 ***
 
+* **Sparse Representation** $\equiv$
+a type of data representation where the majority of the values in the data are zero, and only a small subset of the values are non-zero.  
+**Example:** "Mary had a little lamb" == [1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0]
+
+***
+

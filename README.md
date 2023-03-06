@@ -15,7 +15,8 @@ Mastering the Language of Machine Learning
 a statistical method used to model the relationship between a categorical dependent variable and one or more independent variables. a popular method in the field of machine learning for solving regression problems, where the goal is to  <u>predict a continuous numerical value</u>.  
 The linear regression model assumes a linear relationship between the dependent variable and the independent variables, which means that the relationship can be expressed mathematically as a straight line. The model estimates the coefficients of the line, which represent the slope and intercept.  
 Once the model has been trained on a set of training data, it can be used to make predictions on new data by plugging in the values of the independent variables and calculating the corresponding predicted value of the dependent variable.  
-**example:** Suppose we have a dataset of houses that includes the size of the house in square feet (the independent variable) and the price of the house in dollars (the dependent variable). We can use linear regression to model the relationship between these two variables and make predictions on new data.
+**example:**  
+Suppose we have a dataset of houses that includes the size of the house in square feet (the independent variable) and the price of the house in dollars (the dependent variable). We can use linear regression to model the relationship between these two variables and make predictions on new data.
 
 1. First, we would split the data into a training set and a testing set. The training set would be used to train the linear regression model, while the testing set would be used to evaluate its performance.  
 2. Next, we would fit the linear regression model to the training data by estimating the coefficients of the line that best fits the data.
@@ -27,7 +28,8 @@ Once the model has been trained on a set of training data, it can be used to mak
 * **Logistic regression** $\equiv$
 a statistical method used to model the relationship between a categorical dependent variable and one or more independent variables. a popular method in the field of machine learning for solving binary classification problems, where the goal is to <u>predict whether an observation belongs to one of two possible classes</u>.  
 The logistic regression model uses a logistic function to transform the output of a linear regression model into a probability value between 0 and 1, which can then be interpreted as the probability of an observation belonging to a certain class. The logistic function, also known as the sigmoid function, is an S-shaped curve that maps any real-valued number to a value between 0 and 1.  
-**Example:** Suppose you are a credit card company and you want to predict whether a credit card application will be approved or denied based on various factors such as the applicant's income, credit score, and employment status. You have a dataset of past credit card applications and their outcomes, which you can use to train a logistic regression model.
+**Example:**  
+Suppose you are a credit card company and you want to predict whether a credit card application will be approved or denied based on various factors such as the applicant's income, credit score, and employment status. You have a dataset of past credit card applications and their outcomes, which you can use to train a logistic regression model.
 
 1. First, you would clean and preprocess the data, which might involve filling in missing values, encoding categorical variables, and standardizing numeric variables. You would then split the data into training and testing sets, with the majority of the data used for training the model and a smaller portion used for testing its accuracy.
 2. Next, you would fit a logistic regression model to the training data using an appropriate software package, such as scikit-learn in Python. The model would estimate the probability of a credit card application being approved based on the values of the independent variables.
@@ -48,7 +50,7 @@ $$f(x) = \frac{1}{1 + e^{-x}}$$
 
 * **Sentiment** $\equiv$
 the overall <u> emotional tone or attitude expressed in a piece of text</u>.  
-**Example:**
+**Example:**  
 the sentence "I love this pizza, it's the best I've ever had!" expresses a positive sentiment with a high degree of intensity, while the sentence "I didn't like the movie very much" expresses a negative sentiment with a low degree of intensity.
 
 ***
@@ -60,20 +62,23 @@ using natural language processing and machine learning techniques to automatical
 
 * **Vocabulary** $\equiv$
 a collection of all the unique words or terms that appear in a corpus of text.  
-**Example:** ["Mary", "had", "a", "little", "lamb", "Its", "fleece", "was", "white", "as", "snow"]
+**Example:**  
+["Mary", "had", "a", "little", "lamb", "Its", "fleece", "was", "white", "as", "snow"]
 
 
 ***
 
 * **Sparse Representation** $\equiv$
 a type of data representation where the majority of the values in the data are zero, and only a small subset of the values are non-zero.  
-**Example:** "Mary had a little lamb" == [1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0]
+**Example:**  
+"Mary had a little lamb" == [1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0]
 
 ***
 
 * **Frequency Mapping** $\equiv$
 the process of counting the occurrence of words in a given text or corpus.  
-**Example:** "Mary had a little lamb. Its fleece was white as snow."  
+**Example:**  
+"Mary had a little lamb. Its fleece was white as snow."  
 {"Mary": 1,
 "had": 1,
 "a": 1,
@@ -90,7 +95,8 @@ the process of counting the occurrence of words in a given text or corpus.
 
 * **Sentiment Feature Extraction** $\equiv$
 a process of extracting features from text data that can be used to identify the sentiment or emotion expressed in the text.  
-**Example:** Consider the following tweet:
+**Example:**  
+Consider the following tweet:
 "Mary had a little lamb. Its fleece was white as snow but the butcher didn't care."
 We can use the vocabulary to extract the features for this tweet as follows:
 
@@ -100,4 +106,13 @@ We can use the vocabulary to extract the features for this tweet as follows:
 Thus, the vector representation for this tweet would be [1, 0, 1], indicating that it has a negative sentiment due to the negative word "butcher".
 
 ***
+
+* **Tokenization** $\equiv$
+the process of breaking down a text document or string of text into individual words or terms, known as tokens.  
+**Example:**  
+Original text: "The quick brown fox jumps over the lazy dog."  
+Tokenized text: ["The", "quick", "brown", "fox", "jumps", "over", "the", "lazy", "dog", "."]
+
+***
+
 
